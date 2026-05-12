@@ -4,11 +4,26 @@ import ProductCard from './components/ProductCard.vue'
 import CartSummary from './components/CartSummary.vue'
 
 const products = ref([
-  { id: 1, name: 'Bàn phím cơ', price: 850000, inStock: true },
-  { id: 2, name: 'Chuột không dây', price: 320000, inStock: true },
-  { id: 3, name: 'Tai nghe gaming', price: 650000, inStock: false },
-  { id: 4, name: 'Lót chuột', price: 150000, inStock: true },
-  { id: 5, name: 'Màn hình 144Hz', price: 4500000, inStock: true }
+  { 
+    id: 1, name: 'Bàn phím cơ AKKO', price: 1250000, inStock: true, 
+    image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9mPFT95QQGPDn-5Zyi2w0Pz02FGLE9SMQ_LOZ_Dbj70k6JdVZ8AExNHNrHj9iHXWMwFldxz45u0vzjGDGg6GwZkI06ktCLl1uT_HYZi14xdQO-fM9AoYq' 
+  },
+  { 
+    id: 2, name: 'Chuột Logitech G Pro', price: 2990000, inStock: true, 
+    image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9mPFT95QQGPDn-5Zyi2w0Pz02FGLE9SMQ_LOZ_Dbj70k6JdVZ8AExNHNrHj9iHXWMwFldxz45u0vzjGDGg6GwZkI06ktCLl1uT_HYZi14xdQO-fM9AoYq' 
+  },
+  { 
+    id: 3, name: 'Tai nghe HyperX Cloud II', price: 1850000, inStock: false, 
+    image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9mPFT95QQGPDn-5Zyi2w0Pz02FGLE9SMQ_LOZ_Dbj70k6JdVZ8AExNHNrHj9iHXWMwFldxz45u0vzjGDGg6GwZkI06ktCLl1uT_HYZi14xdQO-fM9AoYq' 
+  },
+  { 
+    id: 4, name: 'Lót chuột Razer Gigantus', price: 450000, inStock: true, 
+    image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9mPFT95QQGPDn-5Zyi2w0Pz02FGLE9SMQ_LOZ_Dbj70k6JdVZ8AExNHNrHj9iHXWMwFldxz45u0vzjGDGg6GwZkI06ktCLl1uT_HYZi14xdQO-fM9AoYq' 
+  },
+  { 
+    id: 6, name: 'Webcam Logitech C922', price: 2150000, inStock: true, 
+    image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9mPFT95QQGPDn-5Zyi2w0Pz02FGLE9SMQ_LOZ_Dbj70k6JdVZ8AExNHNrHj9iHXWMwFldxz45u0vzjGDGg6GwZkI06ktCLl1uT_HYZi14xdQO-fM9AoYq' 
+  }
 ])
 
 const cartItems = ref([])

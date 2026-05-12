@@ -22,6 +22,11 @@ const handleAddToCart = () => {
 
 <template>
   <div class="product-card" :class="{ 'out-of-stock': !product.inStock }">
+    
+    <div class="product-image-container" v-if="product.image">
+      <img :src="product.image" :alt="product.name" class="product-image" />
+    </div>
+
     <div class="card-content">
       <h3 class="product-name">{{ product.name }}</h3>
       <p class="price">{{ formattedPrice }}</p>
@@ -61,13 +66,40 @@ const handleAddToCart = () => {
   border-color: #d1d5db;
 }
 
+/* --- CSS MỚI THÊM CHO PHẦN ẢNH --- */
+.product-image-container {
+  width: 100%;
+  height: 200px; /* Bạn có thể tăng/giảm số này để chỉnh độ cao của ảnh */
+  overflow: hidden;
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ép ảnh vừa vặn khung mà không bị méo tỉ lệ */
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08); /* Hiệu ứng phóng to ảnh một chút xíu khi rê chuột vào */
+}
+/* -------------------------------- */
+
 .card-content {
   padding: 20px;
+  flex-grow: 1; /* Đẩy nội dung chiếm hết khoảng trống để các nút luôn thẳng hàng ở đáy */
 }
 
 .out-of-stock {
   opacity: 0.75;
   background-color: #fafafa;
+}
+
+/* Làm ảnh mờ đi thêm một chút nếu hết hàng */
+.out-of-stock .product-image {
+  filter: grayscale(80%); 
 }
 
 .product-name {
@@ -80,7 +112,7 @@ const handleAddToCart = () => {
 .price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #4f46e5; /* Màu chàm hiện đại */
+  color: #4f46e5;
   margin-bottom: 16px;
 }
 
