@@ -99,9 +99,9 @@ Bấm "Thêm vào giỏ hàng" nhưng không có phản hồi.
   Hạng mục            Chi tiết
   ------------------- ----------------------------------------------
   Link GitHub         (https://github.com/2bllikigai/Lab2_FullStack)
-  Ảnh chụp màn hình   ![Trang chủ](images/home.png)
-  Ảnh chụp màn hình   ![Tìm kiếm](images/timkiem.png)
-  Ảnh chụp màn hình   ![Lọc Theo hết hàng](images/hethang.png)
-  Ảnh chụp màn hình   ![Lọc Theo còn hàng](images/conhang.png)
-  Ảnh chụp màn hình   ![Debug](images/debug.png)
-  Ảnh chụp màn hình   ![Chi tiết giỏ hàng](images/detailcart.png)
+  Ảnh Trang chủ   ![Trang chủ](images/home.png)
+  Ảnh Tìm kiếm   ![Tìm kiếm](images/timkiem.png)
+  Ảnh Lọc Theo hết hàng   ![Lọc Theo hết hàng](images/hethang.png)
+  Ảnh Lọc Theo còn hàng   ![Lọc Theo còn hàng](images/conhang.png)
+  Ảnh Debug   ![Debug](images/debug.png)
+  Ảnh Chi tiết giỏ hàng   ![Chi tiết giỏ hàng](images/detailcart.png)
